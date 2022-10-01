@@ -13,6 +13,9 @@ function Login() {
         </div>
         <input type="submit" value="Submit" />
       </form>
+
+      <h1>Sign Up</h1>
+
     </div>
   );
 }

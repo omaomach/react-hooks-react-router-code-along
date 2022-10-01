@@ -4,6 +4,8 @@ import Home from "./Home";
 import About from "./About";
 import Login from "./Login";
 import NavBar from "./NavBar";
+import SignUp from "./SignUp";
+import Messages from "./Messages";
 
 function App() {
     return (
@@ -13,7 +15,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/messages" element={<Messages />} />
         </Routes>
+        <h2>Engineer Joash Omao Machoka</h2>
       </div>
     );
   }

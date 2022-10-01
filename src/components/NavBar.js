@@ -11,6 +11,11 @@ const linkStyles = {
     color: "white",
   };
 
+const buttonStyles = {
+  width: "50px"
+
+}
+
 function NavBar() {
     return (
       <div>
@@ -25,7 +30,7 @@ function NavBar() {
             background: "darkblue",
           }}
         >
-          Home
+          <button style={buttonStyles}>Home</button>
         </NavLink>
   
         <NavLink
@@ -48,6 +53,28 @@ function NavBar() {
           }}
         >
           Login
+        </NavLink>
+
+        <NavLink
+          to="/signup"
+          exact
+          style={{width: "80px"}}
+          activeStyle={{
+            background: "darkblue",
+          }}
+        >
+          Sign Up
+        </NavLink>
+
+        <NavLink
+          to="/messages"
+          exact
+          style={linkStyles}
+          activeStyle={{
+            background: "darkblue",
+          }}
+        >
+          Messages
         </NavLink>
   
       </div>
